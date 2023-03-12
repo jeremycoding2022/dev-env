@@ -9,6 +9,8 @@ M.plugins = {
     ["lukas-reineke/indent-blankline.nvim"] = override.blankline,
     ["goolord/alpha-nvim"] = override.alpha,
     ["williamboman/mason.nvim"] = override.mason,
+    ["hrsh7th/nvim-cmp"] = override.cmp,
+
   },
 
   user = require "custom.plugins",
