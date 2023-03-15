@@ -102,6 +102,7 @@ return {
   ['kevinhwang91/promise-async'] = {
   },
   ['kevinhwang91/nvim-ufo'] = {
+    after = "promise-async"
     config = function()
       require "custom.plugins.nvimufo"
     end,

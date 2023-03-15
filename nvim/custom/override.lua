@@ -72,19 +72,16 @@ M.mason = {
     "lua-language-server",
     "stylua",
 
-    -- web dev
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "emmet-ls",
-    "json-lsp",
-
     -- shell
     "shfmt",
     "shellcheck",
 
+    "bashls",
+    "json-lsp",
+
     "gopls",
+    "pyright",
+    "rust-analyzer",
   },
 }
 
