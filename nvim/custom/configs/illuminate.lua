@@ -37,10 +37,21 @@ illuminate.configure({
   -- Use :echom synIDattr(synIDtrans(synID(line('.'), col('.'), 1)), 'name')
   providers_regex_syntax_allowlist = {},
   -- under_cursor: whether or not to illuminate under the cursor
-  under_cursor = true,
+  -- under_cursor = true,
 })
 vim.g.Illuminate_ftblacklist = {
     "NvimTree",
     "vista_kind",
     "toggleterm"
 }
+vim.cmd [[
+augroup illuminate_augroup
+    autocmd!
+    autocmd VimEnter * hi link illuminatedWord CursorLine
+augroup END
+
+augroup illuminate_augroup
+    autocmd!
+    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline
+augroup END
+]]
